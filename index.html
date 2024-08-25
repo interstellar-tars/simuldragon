@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#user-management">User Management</a></li>
+                <li><a href="#moderation-management">Moderation Management</a></li>
                 <li><a href="#game-management">Game Management</a></li>
                 <li><a href="#chat-management">Chat Management</a></li>
                 <li><a href="#billing-economy">Billing & Economy</a></li>
@@ -29,7 +30,17 @@
 
         <section id="user-management">
             <h2>User Management</h2>
-            <div id="user-list"></div>
+            <input type="text" id="searchUser" placeholder="Enter User ID or Username">
+            <button onclick="searchUser()">Search</button>
+            <div id="user-details"></div>
+        </section>
+
+        <section id="moderation-management">
+            <h2>Moderation Management</h2>
+            <input type="text" id="moderateUser" placeholder="Enter User ID">
+            <button onclick="banUser()">Ban User</button>
+            <button onclick="unbanUser()">Unban User</button>
+            <div id="moderation-result"></div>
         </section>
 
         <section id="game-management">
